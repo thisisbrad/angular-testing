@@ -1,1 +1,1 @@
-/*! angularfirestarter - v1.0.0 - 2015-08-05 */var app=function(a){return"Hello World"};
+/*! angularfirestarter - v1.0.0 - 2015-08-10 */var app=angular.module("myapp",[]);app.controller("GithubCtrl",["$scope","$http",function(a,b){console.log("YAY!")}]);

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" ng-app="myapp">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -21,13 +21,15 @@
   	<script src="bower/angularfire/dist/angularfire.js"></script>
   	<!-- endbower -->
 
+    <script src="js/script.js"></script>
+
 	<!--[if IE]>
   		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 <body>
     <!-- This is a BOSS HTML5 template! -->
-    <section class="container">
+    <section class="container" ng-controller="GithubCtrl">
     	<h1>Title Here</h1>
     	<p>check it out yo</p>
     	<button class="btn btn-primary">Click Me!</button>
