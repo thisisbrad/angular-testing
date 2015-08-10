@@ -1,0 +1,21 @@
+{
+  "name": "angularfirestarter",
+  "version": "0.0.0",
+  "homepage": "https://github.com/thisisbrad/swablu",
+  "authors": [
+    "Brad Beltowski"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-bootstrap": "~0.13.1",
+    "angularfire": "~1.1.2"
+  }
+}
