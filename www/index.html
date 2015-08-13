@@ -34,8 +34,8 @@
     	<h1>GitHub Users</h1>
 
       <div ng-controller="GithubCtrl">
-        <ul>
-          <li ng-repeat="user in users">
+        <ul class="list-group"> 
+          <li ng-repeat="user in users" class="list-group-item">
             <img class="img-circle" height="100" width="100" src="{{user.avatar_url}}" alt="Github User Profile Picture">
             <a class="btn btn-info btn-xs" href='https://github.com/{{user.login}}'>{{user.login}}</a>
           </li>
