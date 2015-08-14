@@ -16,6 +16,7 @@
   ],
   "dependencies": {
     "angular-bootstrap": "~0.13.1",
-    "angularfire": "~1.1.2"
+    "angularfire": "~1.1.2",
+    "angular-mocks": "~1.4.4"
   }
 }
