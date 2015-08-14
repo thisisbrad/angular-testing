@@ -17,7 +17,7 @@ module.exports = function(config) {
     files: ['www/bower/angular/angular.min.js',
       'www/bower/angular-mocks/angular-mocks.js',
       'www/js/**/*.js',
-      'test/karma/**/*.spec.js'
+      'tests/karma/**/*.spec.js'
     ],
 
 
