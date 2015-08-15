@@ -2,16 +2,15 @@ describe('myapp', function(){
 	beforeEach(module('myapp'))
 
 	describe('GithubSvc', function(){
-		it('fetches users', function(done){
+		it('fetches users', function(){
 			inject(function(GithubSvc, $httpBackend){
-				//console.log(GithubSvc)
+				
 				$httpBackend.when('GET', 'https://api.github.com/users')
-				.repsond(['user a', 'user b'])
+				.respond(['user a', 'user b'])
 
 				GithubSvc.fetchUsers()
 				.then(function(users){
-					console.log(users)
-					done()
+					expect(users).to.have.length(2)
 				})
 
 				$httpBackend.flush()
