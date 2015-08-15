@@ -3,9 +3,11 @@ describe('myapp', function(){
 
 	describe('GithubSvc', function(){
 		it('fetches users', function(){
-			GithubSvc.fecthUsers()
-			.then(function(users){
-				console.log(users)
+			inject(function(GithubSvc){
+				GithubSvc.fetchUsers()
+				.then(function(users){
+					console.log(users)
+				})
 			})
 		})
 	})
