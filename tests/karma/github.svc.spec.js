@@ -1,7 +1,13 @@
-describe('math', function(){
-	describe('additon', function(){
-		it('can add 1+1', function(){
-			expect(1+1).to.equal(2)	
+describe('myapp', function(){
+	beforeEach(module('myapp'))
+
+	describe('GithubSvc', function(){
+		it('fetches users', function(){
+			GithubSvc.fecthUsers()
+			.then(function(users){
+				console.log(users)
+			})
 		})
 	})
+
 })
