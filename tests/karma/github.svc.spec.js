@@ -10,6 +10,7 @@ describe('myapp', function(){
 
 				GithubSvc.fetchUsers()
 				.then(function(users){
+					expect(users).to.be.a('array')
 					expect(users).to.have.length(2)
 				})
 
